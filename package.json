@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-round2",
+  "version": "1.0.0",
+  "description": "New portfolio design",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirhunty/Portfolio-Round2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirhunty/Portfolio-Round2/issues"
+  },
+  "homepage": "https://github.com/sirhunty/Portfolio-Round2#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
