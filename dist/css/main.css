@@ -8,6 +8,10 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
+  body#bg-img {
+    background: url(/dist/images/background-coding-coffee-big.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
 
 h1, h2, h3 {
   margin: 0;
@@ -29,7 +33,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #ab1aee; }
 
 main {
   padding: 4rem;
@@ -39,7 +43,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #ab1aee;
         transition: all 0.8s ease-out; }
   main#home {
     overflow: hidden; }
