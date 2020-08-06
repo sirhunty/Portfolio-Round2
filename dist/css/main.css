@@ -8,7 +8,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/dist/images/programming-wallpaper.jpg);
+    background: url(/dist/images/colorful-coding-background.jpg);
     background-attachment: fixed;
     background-size: cover; }
 
