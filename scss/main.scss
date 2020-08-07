@@ -15,7 +15,9 @@ $background-opacity: 0.8;
             background-attachment: fixed;
             background-size: cover;
 
-            .overlay {
+            // psuedo element, no longer need the overlay html class
+            &:after {
+                content: '';
                 position: absolute;
                 top: 0;
                 right: 0;

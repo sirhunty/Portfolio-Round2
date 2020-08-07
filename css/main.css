@@ -18,7 +18,8 @@ body#bg-img {
   background-size: cover;
 }
 
-body#bg-img .overlay {
+body#bg-img:after {
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
