@@ -4,6 +4,7 @@
 }
 
 body {
+  background: #444;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 body#bg-img {
-  background: url(/dist/images/colorful-coding-background.jpg);
+  background: url(/dist/images/programming-wallpaper.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
