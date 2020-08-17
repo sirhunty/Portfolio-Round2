@@ -17,6 +17,11 @@
   transition: all 0.8s ease-out;
 }
 
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

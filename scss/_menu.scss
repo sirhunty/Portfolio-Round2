@@ -15,4 +15,9 @@
         background: white;
         @include easeOut;
     }
+
+    // ratate menu button into an X with menu lines
+    &.close {
+        transform: rotate(180deg);
+    }
 }
