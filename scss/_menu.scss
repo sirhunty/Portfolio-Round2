@@ -1,0 +1,18 @@
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    // Using the easeOut hover from main scss
+    @include easeOut;
+
+    // styling for each menu button line (3 lines)
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: white;
+        @include easeOut;
+    }
+}
