@@ -19,5 +19,16 @@
     // ratate menu button into an X with menu lines
     &.close {
         transform: rotate(180deg);
+
+        // spuedo selector for each line
+        .btn-line {
+            // line 1 roatate
+            &:nth-child(1) {
+                background-color: blue;
+            }
+            // Line 2 hide
+
+            //Line 3 rotate
+        }
     }
 }

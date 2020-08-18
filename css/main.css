@@ -22,6 +22,10 @@
           transform: rotate(180deg);
 }
 
+.menu-btn.close .btn-line:nth-child(1) {
+  background-color: blue;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
