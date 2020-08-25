@@ -68,6 +68,13 @@
   overflow: hidden;
 }
 
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #373737;
+  list-style: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
