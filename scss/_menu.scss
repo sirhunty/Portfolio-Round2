@@ -124,6 +124,10 @@
         color: white;
         text-decoration: none;
         @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+        }
     }
 }
 
