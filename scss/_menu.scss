@@ -108,6 +108,18 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        @include easeOut;
+    }
 }
 
 // Delaying each nav items' slide by 0.1s using a Sass for loop; like "for(let x=0; i <4; i++)
