@@ -84,6 +84,19 @@
           transform: translate3d(0, 0, 0);
 }
 
+.menu-branding {
+  background: #444;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.menu-branding.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

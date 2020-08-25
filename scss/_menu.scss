@@ -78,4 +78,16 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
+    // Targeting the branding side of the menu (left side)
+    &-branding {
+        background: $primary-color;
+        transform: translate3d(0, -100%, 0);
+        @include easeOut;
+
+        &.show {
+            // slide in from the top of page
+            transform: translate3d(0, 0, 0);
+        }
+    }
 }
