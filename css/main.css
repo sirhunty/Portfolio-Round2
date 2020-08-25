@@ -36,6 +36,18 @@
           transform: rotate(-45deg) translate(7px, -6px);
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+}
+
+.menu.show {
+  visibility: visible;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
