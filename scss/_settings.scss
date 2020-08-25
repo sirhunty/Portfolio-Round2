@@ -1,8 +1,9 @@
 $primary-color: #444;
 $secondary-color: #ab1aee;
 $show-home-image: true;
-$home-image: url(/dist/images/colorful-coding-background.jpg);
-$portrait-image: url(/dist/images/me-250px.jpg);
+$home-image: url('/dist/images/colorful-coding-background.jpg');
+$portrait-image: url('/dist/images/me-250px.jpg');
+$portrait-small: url('../dist/images/me-100px.jpg');
 $background-opacity: 0.8;
 
 @mixin easeOut {
