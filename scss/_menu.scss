@@ -107,6 +107,11 @@
             // Sliding in from the right
             transform: translate3d(0, 0, 0);
         }
+
+        // accesses the links withing the nav class
+        &.current > a {
+            color: $secondary-color;
+        }
     }
 
     .nav-link {

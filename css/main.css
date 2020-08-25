@@ -116,6 +116,10 @@
           transform: translate3d(0, 0, 0);
 }
 
+.menu .nav-item.current > a {
+  color: #ab1aee;
+}
+
 .menu .nav-link {
   display: inline-block;
   position: relative;
