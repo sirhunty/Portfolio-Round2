@@ -46,11 +46,12 @@
     opacity: 0.9;
     visibility: hidden;
 
-    // & denote that the styling is applying the menu class and the secondary classes like "menu-nav or manu-branding"
+    // & denotes that the styling is applying the menu class and the secondary classes like "menu-nav or manu-branding"
     &.show {
         visibility: visible;
     }
 
+    // adjusting the both sides of the menu (portrait and list)
     &-branding,
     &-nav {
         display: flex;
@@ -63,10 +64,18 @@
         overflow: hidden;
     }
 
+    // only adjusting the right side of the menu (the links)
     &-nav {
         margin: 0;
         padding: 0;
         background: darken($primary-color, 5);
         list-style: none;
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+
+        &.show {
+            // slide in from the bottom of page
+            transform: translate3d(0, 0, 0);
+        }
     }
 }
