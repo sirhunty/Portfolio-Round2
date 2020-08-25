@@ -43,7 +43,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    // opacity: 0.9;
     visibility: hidden;
 
     // & denotes that the styling is applying the menu class and the secondary classes like "menu-nav or manu-branding"
@@ -97,5 +97,23 @@
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
+    }
+
+    .nav-item {
+        transform: translate3d(-600px, 0, 0);
+        @include easeOut;
+
+        &.show {
+            // Sliding in from the right
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+// Delaying each nav items' slide by 0.1s using a Sass for loop; like "for(let x=0; i <4; i++)
+@for $x from 1 through 5 {
+    // #{$x} is similar to a template literal
+    .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
     }
 }
