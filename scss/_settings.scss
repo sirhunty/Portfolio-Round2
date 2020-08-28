@@ -33,6 +33,16 @@ $background-opacity: 0.8;
     }
 }
 
+
+// Changes text color based upon the primary color; if dark, the text will change to a lighter color (white)
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return black;
+    } @else {
+        @return white;
+    }
+}
 // Media Query MixIns
 
 // Small size
@@ -49,12 +59,14 @@ $background-opacity: 0.8;
     }
 }
 
+// Large size
 @mixin mediaLg {
     @media screen and (min-width: 769px) and (max-width: 1170px){
         @content;
     }
 }
 
+// Extra large size
 @mixin mediaXl {
     @media screen and (min-width: 1171px){
         @content;

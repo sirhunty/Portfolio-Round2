@@ -46,7 +46,8 @@
     // opacity: 0.9;
     visibility: hidden;
 
-    // & denotes that the styling is applying the menu class and the secondary classes like "menu-nav or manu-branding"
+    // & denotes that the styling is applying the menu class
+    // and the secondary classes like "menu-nav or manu-branding"
     &.show {
         visibility: visible;
     }
