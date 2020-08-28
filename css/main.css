@@ -195,11 +195,10 @@
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0);
   }
-  .portrait {
-    background: url("../dist/images/me-100px.jpg");
-    background-size: cover;
-    width: 100px;
-    height: 100px;
+  .menu-branding .portrait {
+    background: url("../dist/images/me-150px.jpg");
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -268,6 +267,8 @@ header {
 
 .text-secondary {
   color: #ab1aee;
+  -webkit-text-decoration: white;
+          text-decoration: white;
 }
 
 main {
