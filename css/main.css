@@ -208,6 +208,15 @@
   }
 }
 
+.about-info {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+      grid-template-areas: 'bioimage bio bio' 'job1 job2 job3 job4';
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
