@@ -217,7 +217,7 @@
       grid-template-columns: repeat(4, 1fr);
 }
 
-.bio-image {
+.about-info .bio-image {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: bioimage;
@@ -226,7 +226,7 @@
   border: #ab1aee 3px solid;
 }
 
-.bio {
+.about-info .bio {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
@@ -234,28 +234,34 @@
   font-size: 1.5rem;
 }
 
-.job-1 {
+.about-info .job-1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: job1;
 }
 
-.job-2 {
+.about-info .job-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: job2;
 }
 
-.job-3 {
+.about-info .job-3 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: job3;
 }
 
-.job-4 {
+.about-info .job-4 {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: job4;
+}
+
+.about-info .job {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #ab1aee 5px solid;
 }
 
 * {
