@@ -6,18 +6,19 @@
 // * selects everything and we are using the border box sizing on all
 * {
 box-sizing: border-box;
-
 }
 
 body {
     @include background;
-    background: $primary-color;
+    background-color: $primary-color;
+    position: absolute;
     color: set-text-color($primary-color);
-    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
-}
+  }
 
 // Headings
 h1, h2, h3 {
@@ -69,7 +70,7 @@ main {
 
     &#home {
         // No scrolling
-        overflow: hidden;
+        overflow: visible;
         h1 {
             margin-top: 20vh;
         }
