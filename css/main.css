@@ -247,7 +247,7 @@
 }
 
 .btn, .btn-dark, .btn-light {
-  display: inline-block;
+  display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
@@ -256,6 +256,16 @@
 .btn:hover, .btn-dark:hover, .btn-light:hover {
   background: #ab1aee;
   color: set-text-color #ab1aee;
+}
+
+.btn-dark {
+  background: black;
+  color: white;
+}
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333;
 }
 
 * {

@@ -19,8 +19,7 @@
 
 // Button Styles
 .btn {
-    // Inline block so the buttons on on their own line
-    display: inline-block;
+    display: block;
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
@@ -34,8 +33,12 @@
 // Extending the button class to the dark and light buttons
 .btn-dark {
     @extend .btn;
+    background: darken($primary-color, 50);
+    color: white;
 }
 
 .btn-light {
     @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
 }
