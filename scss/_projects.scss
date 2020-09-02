@@ -1,0 +1,10 @@
+.projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    // setting the images to a 100% of their container; 
+    // therefore adjusting them to be smaller
+    img {
+        width: 100%;
+    }
+}
