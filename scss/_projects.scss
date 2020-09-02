@@ -16,3 +16,26 @@
         }
     }
 }
+
+// Button Styles
+.btn {
+    // Inline block so the buttons on on their own line
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $secondary-color;
+        color: set-text-color
+        ($secondary-color);
+    }
+}
+
+// Extending the button class to the dark and light buttons
+.btn-dark {
+    @extend .btn;
+}
+
+.btn-light {
+    @extend .btn;
+}

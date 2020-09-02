@@ -246,6 +246,18 @@
   transition: all 0.8s ease-out;
 }
 
+.btn, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+.btn:hover, .btn-dark:hover, .btn-light:hover {
+  background: #ab1aee;
+  color: set-text-color #ab1aee;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
