@@ -1,11 +1,15 @@
 // Widescreens
 @include mediaXl {
-
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // Desktops and Laptobs
 @include mediaLg {
-    
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets or Smaller Laptops
@@ -59,11 +63,20 @@
 
       grid-template-columns: 1fr;
     }
+
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // Smartphones
 @include mediaSm {
     main#home h1 {
         margin-top: 10vh;
+    }
+
+    // No need for Repeat as only 1 column is desired; 1fr
+    .projects {
+      grid-template-columns: 1fr;
     }
 }
