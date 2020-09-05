@@ -1,9 +1,9 @@
 // Get the modal
-let modal = document.getElementById("myModal");
+let modal = document.getElementById("trailModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-let img = document.getElementById("myImg");
-let modalImg = document.getElementById("img01");
+let img = document.getElementById("trailImg");
+let modalImg = document.getElementById("img02");
 let captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
