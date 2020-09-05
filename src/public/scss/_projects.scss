@@ -48,16 +48,15 @@
 
 // Modals
 
-/* Style the Image Used to Trigger the Modal */
-#trailImg {
+ /* Style the Image Used to Trigger the Modal */
+ .myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  
-  /* The Modal (background) */
-  .modal {
+}
+
+/* The Modal (background) */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -69,18 +68,18 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (Image) */
-  .modal-content {
+}
+
+/* Modal Content (Image) */
+.modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
-  
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -89,7 +88,7 @@
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-  }
+}
   
   /* Add Animation - Zoom in the Modal */
   .modal-content, #caption {

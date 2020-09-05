@@ -269,7 +269,7 @@
 }
 
 /* Style the Image Used to Trigger the Modal */
-#trailImg {
+.myImg {
   border-radius: 5px;
   cursor: pointer;
   -webkit-transition: 0.3s;

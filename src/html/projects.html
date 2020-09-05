@@ -39,6 +39,7 @@
       href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
@@ -87,15 +88,12 @@
       </h1>
       <h2 class="sm-heading">Here are some of my web applications</h2>
       <div class="projects">
-
         <div class="item">
-            <img 
+          <img
             id="ourcircleImg"
-            src="/src/public/assets/images/Our-Circle-Main.png" 
-            alt="Our Circle" 
-            />
-
-
+            src="/src/public/assets/images/Our-Circle-Main.png"
+            alt="Our Circle"
+          />
 
           <!-- <a href="#!" class="btn-light">
             <i class="fas fa-eye">Project</i>
@@ -106,25 +104,25 @@
         </div>
 
         <div class="item">
-            <img
-              id="trailImg"
-              src="/src/public/assets/images/Trail-Finder_Screenshot.png"
-              alt="Trail Finder"
-            />
+          <img
+            class="myImg"
+            src="/src/public/assets/images/Trail-Finder_Screenshot.png"
+            alt="Trail Finder"
+          />
 
           <!-- The Trail Finder Modal -->
-          <div id="trailModal" class="modal">
+          <div id="myModal" class="modal">
 
             <!-- The Close Button -->
-            <span class="closeModal">&times;</span>
+            <span class="closeModal" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
           
             <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img02">
+            <img class="modal-content" id="img01">
           
             <!-- Modal Caption (Image Text) -->
             <div id="caption"></div>
           </div>
-          
+
           <!-- <a href="#!" class="btn-light">
             <i class="fas fa-eye">Project</i>
           </a>
@@ -134,13 +132,11 @@
         </div>
 
         <div class="item">
-            <img 
+          <img
             id="pokemoodImg"
-            src="/src/public/assets/images/pokemood-screenshot.png" 
-            alt="PokeMood" 
-            />
-
-
+            src="/src/public/assets/images/pokemood-screenshot.png"
+            alt="PokeMood"
+          />
 
           <!-- <a href="#!" class="btn-light">
             <i class="fas fa-eye">Project</i>
@@ -151,13 +147,11 @@
         </div>
 
         <div class="item">
-            <img
-              id="pgIMG"
-              src="/src/public/assets/images/Password-Generator_Screenshot.png"
-              alt="Password Generator"
-            />
-
-
+          <img
+            id="pgIMG"
+            src="/src/public/assets/images/Password-Generator_Screenshot.png"
+            alt="Password Generator"
+          />
 
           <!-- <a href="#!" class="btn-light">
             <i class="fas fa-eye">Project</i>
@@ -168,13 +162,11 @@
         </div>
 
         <div class="item">
-            <img
-              id="schedulerImg"
-              src="/src/public/assets/images/Work-Day-Scheduler_Screenshot.png"
-              alt="Work Day Scheduler"
-            />
-
-
+          <img
+            id="schedulerImg"
+            src="/src/public/assets/images/Work-Day-Scheduler_Screenshot.png"
+            alt="Work Day Scheduler"
+          />
 
           <!-- <a href="#!" class="btn-light">
             <i class="fas fa-eye">Project</i>
@@ -185,13 +177,11 @@
         </div>
 
         <div class="item">
-            <img
-              id="weatherImg"
-              src="/src/public/assets/images/Weather-Dashboard-App_Screenshot.png"
-              alt="Weather Dashboard"
-            />
-
-
+          <img
+            id="weatherImg"
+            src="/src/public/assets/images/Weather-Dashboard-App_Screenshot.png"
+            alt="Weather Dashboard"
+          />
 
           <!-- <a href="#!" class="btn-light">
             <i class="fas fa-eye">Project</i>
