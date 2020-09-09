@@ -166,7 +166,7 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
-      grid-template-areas: 'bioimage bio bio bio' 'job1 job2 job3 job4';
+      grid-template-areas: 'bioimage bio bio bio' 'skills skills skills skills' 'job1 job2 job3 job4';
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
 }
@@ -188,31 +188,47 @@
   font-size: 1.5rem;
 }
 
-.about-info .job-1 {
+.about-info .skills {
   -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: skills;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.about-info .job-1 {
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: job1;
 }
 
 .about-info .job-2 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: job2;
 }
 
 .about-info .job-3 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: job3;
 }
 
 .about-info .job-4 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 4;
   grid-area: job4;
 }
 
 .about-info .job {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #ab1aee 5px solid;
+}
+
+.about-info .skill {
+  font-size: 3rem;
   background: #515151;
   padding: 0.5rem;
   border-bottom: #ab1aee 5px solid;
@@ -553,7 +569,7 @@ main#home h1 {
     height: 150px;
   }
   .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
+        grid-template-areas: 'bioimage' 'bio' 'skills' 'job1' 'job2' 'job3' 'job4';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -566,6 +582,10 @@ main#home h1 {
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
+  }
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   .projects {
     -ms-grid-columns: 1fr;

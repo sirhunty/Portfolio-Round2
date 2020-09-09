@@ -56,6 +56,7 @@
       grid-template-areas: 
       'bioimage'
       'bio'
+      'skills'
       'job1'
       'job2'
       'job3'
@@ -75,8 +76,14 @@
         margin-top: 10vh;
     }
 
+    .main {
+      grid-template-columns: 1fr;
+    }
+
     // No need for Repeat as only 1 column is desired; 1fr
     .projects {
       grid-template-columns: 1fr;
     }
+
+    
 }
