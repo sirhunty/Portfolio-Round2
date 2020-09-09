@@ -15,14 +15,14 @@
     grid-template-areas:
     'bioimage bio bio bio'
     'skills skills skills skills'
-    'job1 job2 job3 job4';
+    'job1 job1 job1 job1'
+    'job2 job2 job2 job2'
+    'job3 job3 job3 job3'
+    'job4 job4 job4 job4';
     grid-template-columns: repeat(4, 1fr);
   }
   
-  .job {
-    height: max-content;
-    width: auto;
-  }
+  
 }
 
 // Tablets or Smaller Laptops

@@ -529,15 +529,9 @@ main#home h1 {
         grid-template-columns: repeat(3, 1fr);
   }
   .about-info {
-        grid-template-areas: 'bioimage bio bio bio' 'skills skills skills skills' 'job1 job2 job3 job4';
+        grid-template-areas: 'bioimage bio bio bio' 'skills skills skills skills' 'job1 job1 job1 job1' 'job2 job2 job2 job2' 'job3 job3 job3 job3' 'job4 job4 job4 job4';
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-  }
-  .job {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    width: auto;
   }
 }
 
