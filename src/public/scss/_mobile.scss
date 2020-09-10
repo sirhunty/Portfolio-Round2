@@ -91,6 +91,8 @@
 
     .main {
       grid-template-columns: 1fr;
+      align-items: center;
+      font-size: small;
     }
 
     // No need for Repeat as only 1 column is desired; 1fr

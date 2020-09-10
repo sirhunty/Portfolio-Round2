@@ -591,6 +591,10 @@ main#home h1 {
   .main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: small;
   }
   .projects {
     -ms-grid-columns: 1fr;
