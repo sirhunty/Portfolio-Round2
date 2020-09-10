@@ -165,7 +165,7 @@
 .about-info {
   display: -ms-grid;
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 15px;
       grid-template-areas: 'bioimage bio bio bio' 'skills skills skills skills' 'job1 job2 job3 job4';
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
@@ -228,7 +228,7 @@
 }
 
 .about-info .skill {
-  font-size: 3rem;
+  font-size: 4rem;
   background: #515151;
   padding: 0.5rem;
   border-bottom: #ab1aee 5px solid;
@@ -523,15 +523,15 @@ main#home h1 {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) and (max-width: 1415px) {
   .projects {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
   .about-info {
-        grid-template-areas: 'bioimage bio bio bio' 'skills skills skills skills' 'job1 job1 job1 job1' 'job2 job2 job2 job2' 'job3 job3 job3 job3' 'job4 job4 job4 job4';
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 'bioimage' 'bio' 'skills' 'job1' 'job2' 'job3' 'job4';
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
