@@ -316,10 +316,6 @@
   /* Black w/ opacity */
 }
 
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;

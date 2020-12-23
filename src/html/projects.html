@@ -94,6 +94,7 @@
             src="/src/public/assets/images/Our-Circle-Main.png"
             alt="Our Circle"
           />
+          <p class="projectTitle" hidden>Our Circle</p>
           <p class="modalInfo" hidden>
             Our Circle is an application made for groups of people looking to
             stay closely connected. Whether it be a family, group of friends or
@@ -105,12 +106,8 @@
             select Circle to see and expand on. Technologies Used React MySql
             Javascript Node Express Sequelize Axios Passport Bootstrap Sass CSS
           </p>
-          <a href="http://our-circle.herokuapp.com/" class="btn-light">
-            <i class="fas fa-eye">Project</i>
-          </a>
-          <a href="https://github.com/zidandesirae/Project3" class="btn-dark">
-            <i class="fab fa-github">Github</i>
-          </a>
+          <p class="demoLink" hidden>http://our-circle.herokuapp.com/</p>
+          <p class="githubLink" hidden>https://github.com/zidandesirae/Project3</p>
         </div>
 
         <div class="item">
@@ -132,12 +129,8 @@
             populates into a carousel on the page. The user can then search
             again once they have found the required information.
           </p>
-          <a href="https://howbzr.github.io/Astro-Project/" class="btn-light">
-            <i class="https://sirhunty.github.io/03-JavaScript-RPG/">Project</i>
-          </a>
-          <a href="https://github.com/HOWBZR/Astro-Project" class="btn-dark">
-            <i class="https://github.com/sirhunty/03-JavaScript-RPG">Github</i>
-          </a>
+          <p class="demoLink" hidden>https://howbzr.github.io/Astro-Project/</p>
+          <p class="githubLink" hidden>https://github.com/HOWBZR/Astro-Project</p>
         </div>
 
         <div class="item">
@@ -157,12 +150,8 @@
             the Pokémon-related content - all rights are reserved to the
             original creators of the Pokémon.
           </p>
-          <a href="https://murmuring-mountain-45065.herokuapp.com/" class="btn-light">
-            <i class="fas fa-eye">Project</i>
-          </a>
-          <a href="https://github.com/MelanieRogoff/PokeMood" class="btn-dark">
-            <i class="fab fa-github">Github</i>
-          </a>
+          <p class="demoLink" hidden>https://murmuring-mountain-45065.herokuapp.com/</p>
+          <p class="githubLink" hidden>https://github.com/MelanieRogoff/PokeMood</p>
         </div>
 
         <div class="item">
@@ -173,12 +162,8 @@
           />
           <p class="projectTitle" hidden>Password Generator</p>
           <p class="modalInfo" hidden>Random Password Generator</p>
-          <a href="https://sirhunty.github.io/03-JavaScript-RPG/" class="btn-light">
-            <i class="fas fa-eye">Project</i>
-          </a>
-          <a href="https://github.com/sirhunty/03-JavaScript-RPG" class="btn-dark">
-            <i class="fab fa-github">Github</i>
-          </a>
+          <p class="demoLink" hidden>https://sirhunty.github.io/03-JavaScript-RPG/</p>
+          <p class="githubLink" hidden>https://github.com/sirhunty/03-JavaScript-RPG</p>
         </div>
 
         <div class="item">
@@ -193,12 +178,8 @@
             also takes into consideration past, present and future time-zones
             depending the time of day.
           </p>
-          <a href="https://sirhunty.github.io/05-Third-Party-APIs/" class="btn-light">
-            <i class="fas fa-eye">Project</i>
-          </a>
-          <a href="https://github.com/sirhunty/05-Third-Party-APIs" class="btn-dark">
-            <i class="fab fa-github">Github</i>
-          </a>
+          <p class="demoLink" hidden>https://sirhunty.github.io/05-Third-Party-APIs/</p>
+          <p class="githubLink" hidden>https://github.com/sirhunty/05-Third-Party-APIs</p>
         </div>
 
         <div class="item">
@@ -213,18 +194,14 @@
             OpenWeather api to display specific information in regards the City
             chosen.
           </p>
-          <a href="https://sirhunty.github.io/06-Server-Side-APIs/" class="btn-light">
-            <i class="fas fa-eye">Project</i>
-          </a>
-          <a href="https://github.com/sirhunty/06-Server-Side-APIs" class="btn-dark">
-            <i class="fab fa-github">Github</i>
-          </a>
+          <p class="demoLink" hidden>https://sirhunty.github.io/06-Server-Side-APIs/</p>
+          <p class="githubLink" hidden>https://github.com/sirhunty/06-Server-Side-APIs</p>
         </div>
 
         <!-- The Modal Model for All Project Images Above-->
         <div id="myModal" class="modal">
           <!-- Modal Caption (Image Text) -->
-          <div id="caption"></div>
+          <h2 id="caption"></h2>
 
           <!-- The Close Button -->
           <span
@@ -237,7 +214,15 @@
           <div class="modal-content">
             <img id="img01" />
             <p id="modalDesc"></p>
+              <!-- Action Buttons -->
+            <a id="modalDemoButton" class="btn-light">
+              <i class="fas fa-eye">Project</i>
+            </a>
+            <a id="modalGithubButton" class="btn-dark">
+              <i class="fab fa-github">Github</i>
+            </a>
           </div>
+
         </div>
       </div>
     </main>
