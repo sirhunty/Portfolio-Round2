@@ -70,6 +70,10 @@
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+.modal::-webkit-scrollbar{
+  display: none;
+}
+
 /* Modal Content (Image) */
 .modal-content {
     margin: auto;
