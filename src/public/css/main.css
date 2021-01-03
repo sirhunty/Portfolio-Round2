@@ -284,6 +284,10 @@
   color: #333;
 }
 
+#modalDesc {
+  background-color: red;
+}
+
 /* Style the Image Used to Trigger the Modal */
 .myImg {
   border-radius: 5px;
