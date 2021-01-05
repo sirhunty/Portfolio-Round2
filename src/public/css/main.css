@@ -272,6 +272,8 @@
 .btn:hover, .btn-dark:hover, .btn-light:hover {
   background: #ab1aee;
   color: set-text-color #ab1aee;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 .btn-dark {
@@ -285,7 +287,7 @@
 }
 
 #modalDesc {
-  background-color: red;
+  background-color: #ab1aee;
 }
 
 /* Style the Image Used to Trigger the Modal */

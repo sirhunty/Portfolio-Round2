@@ -27,6 +27,7 @@
         background: $secondary-color;
         color: set-text-color
         ($secondary-color);
+        @include easeOut;
     }
 }
 
@@ -49,7 +50,7 @@
 // Modals
 
 #modalDesc {
-  background-color: red;
+  background-color: $secondary-color;
 }
 
  /* Style the Image Used to Trigger the Modal */
