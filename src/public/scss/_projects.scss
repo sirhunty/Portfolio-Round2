@@ -55,7 +55,7 @@
 
  /* Style the Image Used to Trigger the Modal */
  .myImg {
-    border-radius: 5px;
+    // border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -83,6 +83,8 @@
     display: block;
     width: 80%;
     max-width: 700px;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
