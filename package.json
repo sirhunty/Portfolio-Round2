@@ -4,7 +4,7 @@
   "description": "New portfolio design",
   "main": "index.js",
   "scripts": {
-    "start": "index.html",
+    "start": "/index.html",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "repository": {
