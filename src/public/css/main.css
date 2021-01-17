@@ -287,7 +287,8 @@
 }
 
 #modalDesc {
-  background-color: #ab1aee;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -343,7 +344,8 @@
   color: #ccc;
   padding: 10px 0;
   height: 150px;
-  background-color: #ab1aee;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Add Animation - Zoom in the Modal */
