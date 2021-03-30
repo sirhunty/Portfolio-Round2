@@ -289,6 +289,9 @@
 #modalDesc {
   background-color: rgba(105, 105, 105, 0.9);
   /* Grey w/ opacity */
+  outline-style: solid;
+  outline-width: 3px;
+  outline-color: purple;
 }
 
 /* Style the Image Used to Trigger the Modal */
