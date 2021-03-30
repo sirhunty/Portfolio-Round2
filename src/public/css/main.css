@@ -287,8 +287,8 @@
 }
 
 #modalDesc {
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
+  background-color: rgba(105, 105, 105, 0.9);
+  /* Grey w/ opacity */
 }
 
 /* Style the Image Used to Trigger the Modal */
