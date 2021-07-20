@@ -1,4 +1,4 @@
-function openProject(evt, projectSectionName) {
+function openProjects(evt, projectSectionName) {
     // Declaring all the variables
     var i, tabContent, tabLinks;
 

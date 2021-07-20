@@ -1,0 +1,36 @@
+/* Stlying of the tabs */
+.projectTabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: gray;
+}
+
+.projectTabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* Change background color of buttons on hover */
+.projectTabs button:hover {
+  background-color: #771212;
+}
+
+/* Create an active/current tablink class */
+.projectTabs button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabContent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/*# sourceMappingURL=projecttabs.css.map */
