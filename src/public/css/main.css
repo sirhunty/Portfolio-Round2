@@ -459,6 +459,10 @@
   left: 50%;
 }
 
+#xButton {
+  cursor: hand;
+}
+
 /* Change background color of buttons on hover */
 .projectTabs button:hover {
   background-color: #771212;
