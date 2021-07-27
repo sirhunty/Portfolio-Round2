@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
@@ -24,287 +21,247 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <!-- FONT-AWESOME  -->
-    <script
-      src="https://kit.fontawesome.com/d2e3ee39c3.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-    <link rel="stylesheet" href="/src/public/css/main.css" />
-    <title>My Projects</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- FONT-AWESOME  -->
+  <script src="https://kit.fontawesome.com/d2e3ee39c3.js" crossorigin="anonymous"></script>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  <link rel="stylesheet" href="/src/public/css/main.css" />
+  <title>My Projects</title>
+</head>
 
-  <body id="bg-img">
-    <header>
-      <div class="menu-btn">
-        <!--each div below repesents a "line" in the menu button-->
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+<body id="bg-img">
+  <header>
+    <div class="menu-btn">
+      <!--each div below repesents a "line" in the menu button-->
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item current">
+          <a href="projects.html" class="nav-link">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="artwork.html" class="nav-link">My Art</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="work">
+    <h1 class="lg-heading">
+      My
+      <span class="text-secondary">Projects</span>
+    </h1>
+    <h2 class="sm-heading">Here are some of my web applications</h2>
+
+    <!--Project Tabs Section-->
+
+    <!--Project tabs-->
+    <div class="projectTabs">
+      <button class="tabLinks" onclick="openProjects(event, 'FrontEnd')">FrontEnd</button>
+      <button class="tabLinks" onclick="openProjects(event, 'Sass')">Sass</button>
+      <button class="tabLinks" onclick="openProjects(event, 'JavaScript')">JavaScript</button>
+      <button class="tabLinks" onclick="openProjects(event, 'React')">React</button>
+    </div>
+
+    <!--Tab Content-->
+    <div id="FrontEnd" class="tabContent">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>
+      <h3>FrontEnd</h3>
+      <p>Please find my projects that have a focus on Front End Technologies and Designs</p>
+    </div>
+
+    <div id="Sass" class="tabContent">
+      <h3>Sass</h3>
+      <p>Please find my projects that have a focus on Sass Designs</p>
+    </div>
+
+    <div id="JavaScript" class="tabContent">
+      <h3>JavaScript</h3>
+      <p>Please find my projects that have a focus in JavaScript</p>
+    </div>
+
+    <div id="React" class="tabContent">
+      <h3>React</h3>
+      <p>Please find my projects that have a focus in on the React Library</p>
+    </div>
+
+    <div class="projects">
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Our-Circle-Main.png" alt="Our Circle" />
+        <p class="projectTitle" hidden>Our Circle</p>
+        <p class="modalInfo" hidden>
+          Our Circle is an application made for groups of people looking to
+          stay closely connected. Whether it be a family, group of friends or
+          colleagues, Our Circle makes it possible for members to privately
+          share moments and information with one another. Each group's Circle
+          provides a place to collaborate, stay organized and up-to-date on
+          daily ventures. It is designed for members to share calendar events,
+          post messages, create lists and upload photos for those in their
+          select Circle to see and expand on. Technologies Used: React, MySql,
+          Javascript, Node, Express, Sequelize, Axios, Passport, Bootstrap,
+          Sass, and CSS
+        </p>
+        <p class="demoLink" hidden>http://our-circle.herokuapp.com/</p>
+        <p class="githubLink" hidden>
+          https://github.com/zidandesirae/Project3
+        </p>
       </div>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="/index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item current">
-            <a href="projects.html" class="nav-link">My Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="artwork.html" class="nav-link">My Art</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="work">
-      <h1 class="lg-heading">
-        My
-        <span class="text-secondary">Projects</span>
-      </h1>
-      <h2 class="sm-heading">Here are some of my web applications</h2>
-
-      <!--Project Tabs Section-->
-
-      <!--Project tabs-->
-      <div class="projectTabs">
-        <button class="tabLinks" onclick="openProjects(event, 'FrontEnd')">FrontEnd</button>
-        <button class="tabLinks" onclick="openProjects(event, 'Sass')">Sass</button>
-        <button class="tabLinks" onclick="openProjects(event, 'JavaScript')">JavaScript</button>
-        <button class="tabLinks" onclick="openProjects(event, 'React')">React</button>
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Trail-Finder_Screenshot.png" alt="Trail Finder" />
+        <p class="projectTitle" hidden>Trail Finder</p>
+        <p class="modalInfo" hidden>
+          Once a Cosmic Event Finder; now... A Hiking Trail Finder
+          Unfortuntely we did have to make a change to the original plan as we
+          found that there was not a suitable API available to supply the
+          information required. We then pivoted and found an REI Hiking Trail
+          API. Together with the OpenWeather API we are now able to pull Trail
+          information, sunset and sunrise times, temperatures, and even images
+          images. This application allows the user to find trails based upon
+          their State and City slections. The mentioned information above then
+          populates into a carousel on the page. The user can then search
+          again once they have found the required information.
+        </p>
+        <p class="demoLink" hidden>https://howbzr.github.io/Astro-Project/</p>
+        <p class="githubLink" hidden>
+          https://github.com/HOWBZR/Astro-Project
+        </p>
       </div>
 
-      <!--Tab Content-->
-      <div id="FrontEnd" class="tabContent">
-        <h3>FrontEnd</h3>
-        <p>Please find my projects that have a focus on Front End Technologies and Designs</p>
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/pokemood-screenshot.png" alt="PokeMood" />
+        <p class="projectTitle" hidden>PokeMood</p>
+        <p class="modalInfo" hidden>
+          PokéMood is an app created as part of a group project. The app
+          enables users to see Pokémon based on their mood, as well as
+          discover more information about particular Pokémon. This app
+          leverages PokéAPI in addition to JavaScript, MySQL, Sequelizer,
+          Node, SaaS, Express, and Heroku. Special Thanks To: The Pokémon
+          Company International, Nintendo, and PokéAPI. We do not own any of
+          the Pokémon-related content - all rights are reserved to the
+          original creators of the Pokémon.
+        </p>
+        <p class="demoLink" hidden>
+          https://murmuring-mountain-45065.herokuapp.com/
+        </p>
+        <p class="githubLink" hidden>
+          https://github.com/MelanieRogoff/PokeMood
+        </p>
       </div>
 
-      <div id="Sass" class="tabContent">
-        <h3>Sass</h3>
-        <p>Please find my projects that have a focus on Sass Designs</p>
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Password-Generator_Screenshot.png" alt="Password Generator" />
+        <p class="projectTitle" hidden>Password Generator</p>
+        <p class="modalInfo" hidden>Random Password Generator</p>
+        <p class="demoLink" hidden>
+          https://sirhunty.github.io/03-JavaScript-RPG/
+        </p>
+        <p class="githubLink" hidden>
+          https://github.com/sirhunty/03-JavaScript-RPG
+        </p>
       </div>
 
-      <div id="JavaScript" class="tabContent">
-        <h3>JavaScript</h3>
-        <p>Please find my projects that have a focus in JavaScript</p>
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Work-Day-Scheduler_Screenshot.png" alt="Work Day Scheduler" />
+        <p class="projectTitle" hidden>Work Day Scheduler</p>
+        <p class="modalInfo" hidden>
+          A work Day Scheduler for note takeing in time blocks. The scheduler
+          also takes into consideration past, present and future time-zones
+          depending the time of day.
+        </p>
+        <p class="demoLink" hidden>
+          https://sirhunty.github.io/05-Third-Party-APIs/
+        </p>
+        <p class="githubLink" hidden>
+          https://github.com/sirhunty/05-Third-Party-APIs
+        </p>
       </div>
 
-      <div id="React" class="tabContent">
-        <h3>React</h3>
-        <p>Please find my projects that have a focus in on the React Library</p>
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Weather-Dashboard-App_Screenshot.png"
+          alt="Weather Dashboard" />
+        <p class="projectTitle" hidden>Weather Dashboard</p>
+        <p class="modalInfo" hidden>
+          The Weather Dashboard utilizes Third-Party API calls from the
+          OpenWeather api to display specific information in regards the City
+          chosen.
+        </p>
+        <p class="demoLink" hidden>
+          https://sirhunty.github.io/06-Server-Side-APIs/
+        </p>
+        <p class="githubLink" hidden>
+          https://github.com/sirhunty/06-Server-Side-APIs
+        </p>
       </div>
 
-      <div class="projects">
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/Our-Circle-Main.png"
-            alt="Our Circle"
-          />
-          <p class="projectTitle" hidden>Our Circle</p>
-          <p class="modalInfo" hidden>
-            Our Circle is an application made for groups of people looking to
-            stay closely connected. Whether it be a family, group of friends or
-            colleagues, Our Circle makes it possible for members to privately
-            share moments and information with one another. Each group's Circle
-            provides a place to collaborate, stay organized and up-to-date on
-            daily ventures. It is designed for members to share calendar events,
-            post messages, create lists and upload photos for those in their
-            select Circle to see and expand on. Technologies Used: React, MySql,
-            Javascript, Node, Express, Sequelize, Axios, Passport, Bootstrap,
-            Sass, and CSS
-          </p>
-          <p class="demoLink" hidden>http://our-circle.herokuapp.com/</p>
-          <p class="githubLink" hidden>
-            https://github.com/zidandesirae/Project3
-          </p>
-        </div>
+      <!-- Need to adjust project image size -->
+      <!-- Image size source in main picture? -->
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Screenshot.png" alt="Wordpress Server" />
+        <p class="projectTitle" hidden>Wordpress Project</p>
+        <p class="modalInfo" hidden>
+          Completed custom theme using PHP, JavaScript, HTML, CSS/SCSS, and setup with WampServer.
+        </p>
+        <p class="demoLink" hidden>
 
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/Trail-Finder_Screenshot.png"
-            alt="Trail Finder"
-          />
-          <p class="projectTitle" hidden>Trail Finder</p>
-          <p class="modalInfo" hidden>
-            Once a Cosmic Event Finder; now... A Hiking Trail Finder
-            Unfortuntely we did have to make a change to the original plan as we
-            found that there was not a suitable API available to supply the
-            information required. We then pivoted and found an REI Hiking Trail
-            API. Together with the OpenWeather API we are now able to pull Trail
-            information, sunset and sunrise times, temperatures, and even images
-            images. This application allows the user to find trails based upon
-            their State and City slections. The mentioned information above then
-            populates into a carousel on the page. The user can then search
-            again once they have found the required information.
-          </p>
-          <p class="demoLink" hidden>https://howbzr.github.io/Astro-Project/</p>
-          <p class="githubLink" hidden>
-            https://github.com/HOWBZR/Astro-Project
-          </p>
-        </div>
+        </p>
+        <p class="githubLink" hidden>
 
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/pokemood-screenshot.png"
-            alt="PokeMood"
-          />
-          <p class="projectTitle" hidden>PokeMood</p>
-          <p class="modalInfo" hidden>
-            PokéMood is an app created as part of a group project. The app
-            enables users to see Pokémon based on their mood, as well as
-            discover more information about particular Pokémon. This app
-            leverages PokéAPI in addition to JavaScript, MySQL, Sequelizer,
-            Node, SaaS, Express, and Heroku. Special Thanks To: The Pokémon
-            Company International, Nintendo, and PokéAPI. We do not own any of
-            the Pokémon-related content - all rights are reserved to the
-            original creators of the Pokémon.
-          </p>
-          <p class="demoLink" hidden>
-            https://murmuring-mountain-45065.herokuapp.com/
-          </p>
-          <p class="githubLink" hidden>
-            https://github.com/MelanieRogoff/PokeMood
-          </p>
-        </div>
+        </p>
+      </div>
 
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/Password-Generator_Screenshot.png"
-            alt="Password Generator"
-          />
-          <p class="projectTitle" hidden>Password Generator</p>
-          <p class="modalInfo" hidden>Random Password Generator</p>
-          <p class="demoLink" hidden>
-            https://sirhunty.github.io/03-JavaScript-RPG/
-          </p>
-          <p class="githubLink" hidden>
-            https://github.com/sirhunty/03-JavaScript-RPG
-          </p>
-        </div>
+      <!-- The Modal Model for All Project Images Above-->
+      <!-- TODO: Make sure modal styling references items below this comment -->
+      <div id="myModal" class="modal">
+        <!-- Modal Caption (Image Text) -->
+        <h2 id="caption"></h2>
 
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/Work-Day-Scheduler_Screenshot.png"
-            alt="Work Day Scheduler"
-          />
-          <p class="projectTitle" hidden>Work Day Scheduler</p>
-          <p class="modalInfo" hidden>
-            A work Day Scheduler for note takeing in time blocks. The scheduler
-            also takes into consideration past, present and future time-zones
-            depending the time of day.
-          </p>
-          <p class="demoLink" hidden>
-            https://sirhunty.github.io/05-Third-Party-APIs/
-          </p>
-          <p class="githubLink" hidden>
-            https://github.com/sirhunty/05-Third-Party-APIs
-          </p>
-        </div>
+        <!-- The Close Button -->
+        <span class="closeModal" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/Weather-Dashboard-App_Screenshot.png"
-            alt="Weather Dashboard"
-          />
-          <p class="projectTitle" hidden>Weather Dashboard</p>
-          <p class="modalInfo" hidden>
-            The Weather Dashboard utilizes Third-Party API calls from the
-            OpenWeather api to display specific information in regards the City
-            chosen.
-          </p>
-          <p class="demoLink" hidden>
-            https://sirhunty.github.io/06-Server-Side-APIs/
-          </p>
-          <p class="githubLink" hidden>
-            https://github.com/sirhunty/06-Server-Side-APIs
-          </p>
-        </div>
-
-          <!-- Need to adjust project image size -->
-          <!-- Image size source in main picture? -->
-        <div class="item">
-          <img
-            class="myImg"
-            src="/src/public/assets/images/Screenshot.png"
-            alt="Wordpress Server"
-          />
-          <p class="projectTitle" hidden>Wordpress Project</p>
-          <p class="modalInfo" hidden>
-            Completed custom theme using PHP, JavaScript, HTML, CSS/SCSS, and setup with WampServer. 
-          </p>
-          <p class="demoLink" hidden>
-            
-          </p>
-          <p class="githubLink" hidden>
-            
-          </p>
-        </div>
-
-        <!-- The Modal Model for All Project Images Above-->
-        <!-- TODO: Make sure modal styling references items below this comment -->
-        <div id="myModal" class="modal">
-          <!-- Modal Caption (Image Text) -->
-          <h2 id="caption"></h2>
-
-          <!-- The Close Button -->
-          <span
-            class="closeModal"
-            onclick="document.getElementById('myModal').style.display='none'"
-            >&times;</span
-          >
-
-          <!-- Modal Content (The Image) -->
-          <div class="modal-content">
-            <img id="img01" />
-            <p id="modalDesc"></p>
-            <!-- Action Buttons -->
-              <a id="modalDemoButton" target="_blank" class="btn-light">
-                <i class="fas fa-eye"> Project</i>
-              </a>
-              <a id="modalGithubButton" target="_blank" class="btn-light">
-                <i class="fab fa-github"> Github</i>
-              </a>
-            </div>
-          </div>
+        <!-- Modal Content (The Image) -->
+        <div class="modal-content">
+          <img id="img01" />
+          <p id="modalDesc"></p>
+          <!-- Action Buttons -->
+          <a id="modalDemoButton" target="_blank" class="btn-light">
+            <i class="fas fa-eye"> Project</i>
+          </a>
+          <a id="modalGithubButton" target="_blank" class="btn-light">
+            <i class="fab fa-github"> Github</i>
+          </a>
         </div>
       </div>
-    </main>
+    </div>
+    </div>
+  </main>
 
-    <footer id="main-footer">Copyright &copy; 2020</footer>
+  <footer id="main-footer">Copyright &copy; 2020</footer>
 
-    <script src="/src/public/js/main.js"></script>
-    <script src="/src/public/js/modal.js"></script>
-    <script src="/src/public/js/projecttabs.js"></script>
-  </body>
+  <script src="/src/public/js/main.js"></script>
+  <script src="/src/public/js/modal.js"></script>
+  <script src="/src/public/js/projecttabs.js"></script>
+</body>
+
 </html>
