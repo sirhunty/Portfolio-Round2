@@ -445,7 +445,8 @@
 .projectTabs {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: blue;
+  background-color: gray;
+  position: relative;
 }
 
 .projectTabs button {
@@ -455,8 +456,7 @@
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  left: 50%;
 }
 
 /* Change background color of buttons on hover */
