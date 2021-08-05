@@ -84,79 +84,74 @@
       <button class="tabLinks" onclick="openProjects(event, 'JavaScript')">JavaScript</button>
       <button class="tabLinks" onclick="openProjects(event, 'React')">React</button>
     </div>
+
+    <!--Tab Content-->
+    <div id="FrontEnd" class="tabContent">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
+      <h3>FrontEnd</h3>
+      <p>Please find my projects that have a focus on Front End Technologies and Designs</p>
+    </div>
+
+    <div id="Sass" class="tabContent">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
+      <h3>Sass</h3>
+      <p>Please find my projects that have a focus on Sass Designs</p>
+    </div>
+
+    <div id="JavaScript" class="tabContent">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
+      <h3>JavaScript</h3>
+      <p>Please find my projects that have a focus in JavaScript</p>
+    </div>
+
+    <div id="React" class="tabContent">
+      <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
+      <h3>React</h3>
+      <p>Please find my projects that have a focus in on the React Library</p>
+    </div>
+
     <div class="projects">
-      <!--Tab Content-->
-      <div id="FrontEnd" class="tabContent">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
-        <h3>FrontEnd</h3>
-        <p>Please find my projects that have a focus on Front End Technologies and Designs</p>
-
-        <div class="item">
-          <img class="myImg" src="/src/public/assets/images/Our-Circle-Main.png" alt="Our Circle" />
-          <p class="projectTitle" hidden>Our Circle</p>
-          <p class="modalInfo" hidden>
-            Our Circle is an application made for groups of people looking to
-            stay closely connected. Whether it be a family, group of friends or
-            colleagues, Our Circle makes it possible for members to privately
-            share moments and information with one another. Each group's Circle
-            provides a place to collaborate, stay organized and up-to-date on
-            daily ventures. It is designed for members to share calendar events,
-            post messages, create lists and upload photos for those in their
-            select Circle to see and expand on. Technologies Used: React, MySql,
-            Javascript, Node, Express, Sequelize, Axios, Passport, Bootstrap,
-            Sass, and CSS
-          </p>
-          <p class="demoLink" hidden>http://our-circle.herokuapp.com/</p>
-          <p class="githubLink" hidden>
-            https://github.com/zidandesirae/Project3
-          </p>
-        </div>
-
-        <div class="item">
-          <img class="myImg" src="/src/public/assets/images/Trail-Finder_Screenshot.png" alt="Trail Finder" />
-          <p class="projectTitle" hidden>Trail Finder</p>
-          <p class="modalInfo" hidden>
-            Once a Cosmic Event Finder; now... A Hiking Trail Finder
-            Unfortuntely we did have to make a change to the original plan as we
-            found that there was not a suitable API available to supply the
-            information required. We then pivoted and found an REI Hiking Trail
-            API. Together with the OpenWeather API we are now able to pull Trail
-            information, sunset and sunrise times, temperatures, and even images
-            images. This application allows the user to find trails based upon
-            their State and City slections. The mentioned information above then
-            populates into a carousel on the page. The user can then search
-            again once they have found the required information.
-          </p>
-          <p class="demoLink" hidden>https://howbzr.github.io/Astro-Project/</p>
-          <p class="githubLink" hidden>
-            https://github.com/HOWBZR/Astro-Project
-          </p>
-        </div>
-
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Our-Circle-Main.png" alt="Our Circle" />
+        <p class="projectTitle" hidden>Our Circle</p>
+        <p class="modalInfo" hidden>
+          Our Circle is an application made for groups of people looking to
+          stay closely connected. Whether it be a family, group of friends or
+          colleagues, Our Circle makes it possible for members to privately
+          share moments and information with one another. Each group's Circle
+          provides a place to collaborate, stay organized and up-to-date on
+          daily ventures. It is designed for members to share calendar events,
+          post messages, create lists and upload photos for those in their
+          select Circle to see and expand on. Technologies Used: React, MySql,
+          Javascript, Node, Express, Sequelize, Axios, Passport, Bootstrap,
+          Sass, and CSS
+        </p>
+        <p class="demoLink" hidden>http://our-circle.herokuapp.com/</p>
+        <p class="githubLink" hidden>
+          https://github.com/zidandesirae/Project3
+        </p>
       </div>
 
-      <div id="Sass" class="tabContent">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
-        <h3>Sass</h3>
-        <p>Please find my projects that have a focus on Sass Designs</p>
+      <div class="item">
+        <img class="myImg" src="/src/public/assets/images/Trail-Finder_Screenshot.png" alt="Trail Finder" />
+        <p class="projectTitle" hidden>Trail Finder</p>
+        <p class="modalInfo" hidden>
+          Once a Cosmic Event Finder; now... A Hiking Trail Finder
+          Unfortuntely we did have to make a change to the original plan as we
+          found that there was not a suitable API available to supply the
+          information required. We then pivoted and found an REI Hiking Trail
+          API. Together with the OpenWeather API we are now able to pull Trail
+          information, sunset and sunrise times, temperatures, and even images
+          images. This application allows the user to find trails based upon
+          their State and City slections. The mentioned information above then
+          populates into a carousel on the page. The user can then search
+          again once they have found the required information.
+        </p>
+        <p class="demoLink" hidden>https://howbzr.github.io/Astro-Project/</p>
+        <p class="githubLink" hidden>
+          https://github.com/HOWBZR/Astro-Project
+        </p>
       </div>
-
-      <div id="JavaScript" class="tabContent">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
-        <h3>JavaScript</h3>
-        <p>Please find my projects that have a focus in JavaScript</p>
-      </div>
-
-      <div id="React" class="tabContent">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
-        <h3>React</h3>
-        <p>Please find my projects that have a focus in on the React Library</p>
-      </div>
-
-
-
-
-
 
       <div class="item">
         <img class="myImg" src="/src/public/assets/images/pokemood-screenshot.png" alt="PokeMood" />
