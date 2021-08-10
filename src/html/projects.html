@@ -77,15 +77,17 @@
 
     <!--Project Tabs Section-->
 
-    <!--Project tabs-->
+    <!--Project tab buttons-->
     <div class="projectTabs">
       <button class="tabLinks" onclick="openProjects(event, 'FrontEnd')">FrontEnd</button>
       <button class="tabLinks" onclick="openProjects(event, 'Sass')">Sass</button>
       <button class="tabLinks" onclick="openProjects(event, 'JavaScript')">JavaScript</button>
       <button class="tabLinks" onclick="openProjects(event, 'React')">React</button>
     </div>
+
+    <!--Tab Content-->
     <div class="projects">
-      <!--Tab Content-->
+      <!--FRONTEND TAB-->
       <div id="FrontEnd" class="tabContent">
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
         <h3>FrontEnd</h3>
@@ -136,13 +138,15 @@
       </div>
 
 
+      <!--SASS TAB-->
       <div id="Sass" class="tabContent">
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
         <h3>Sass</h3>
         <p>Please find my projects that have a focus on Sass Designs</p>
 
         <div class="item">
-          <img class="myImg" src="/src/public/assets/images/Password-Generator_Screenshot.png" alt="Password Generator" />
+          <img class="myImg" src="/src/public/assets/images/Password-Generator_Screenshot.png"
+            alt="Password Generator" />
           <p class="projectTitle" hidden>Password Generator</p>
           <p class="modalInfo" hidden>Random Password Generator</p>
           <p class="demoLink" hidden>
@@ -152,9 +156,10 @@
             https://github.com/sirhunty/03-JavaScript-RPG
           </p>
         </div>
-  
+
         <div class="item">
-          <img class="myImg" src="/src/public/assets/images/Work-Day-Scheduler_Screenshot.png" alt="Work Day Scheduler" />
+          <img class="myImg" src="/src/public/assets/images/Work-Day-Scheduler_Screenshot.png"
+            alt="Work Day Scheduler" />
           <p class="projectTitle" hidden>Work Day Scheduler</p>
           <p class="modalInfo" hidden>
             A work Day Scheduler for note takeing in time blocks. The scheduler
@@ -171,6 +176,7 @@
 
       </div>
 
+      <!--JAVASCRIPT TAB-->
       <div id="JavaScript" class="tabContent">
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
         <h3>JavaScript</h3>
@@ -216,6 +222,7 @@
 
       </div>
 
+      <!--REACT TAB-->
       <div id="React" class="tabContent">
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display">X</span>
         <h3>React</h3>
@@ -228,26 +235,16 @@
             Completed custom theme using PHP, JavaScript, HTML, CSS/SCSS, and setup with WampServer.
           </p>
           <p class="demoLink" hidden>
-  
+
           </p>
           <p class="githubLink" hidden>
-  
+
           </p>
         </div>
 
       </div>
 
 
-
-
-
-
-
-
-
-
-
-      
 
       <!-- The Modal Model for All Project Images Above-->
       <!-- TODO: Make sure modal styling references items below this comment -->
