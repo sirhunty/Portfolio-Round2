@@ -4,6 +4,9 @@
     border: 1px solid #ccc;
     background-color: gray;
     position: relative;
+    display: grid;
+    grid-gap: 0.6rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .projectTabs button {
@@ -14,6 +17,24 @@
     cursor: pointer;
     padding: 14px 16px;
     left: 50%;
+}
+
+
+
+// setting the images to a 100% of their container; 
+// therefore adjusting them to be smaller
+img {
+    width: 50%;
+    border: 3px white solid;
+    display: grid;
+    grid-gap: 0.6rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    &:hover {
+        opacity: 0.8;
+        border-color: $secondary-color;
+        @include easeOut;
+    }
 }
 
 #xButton {
