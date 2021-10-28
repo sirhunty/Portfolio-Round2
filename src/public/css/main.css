@@ -242,7 +242,7 @@
   height: 60px;
 }
 
-.items {
+.item {
   display: -ms-grid;
   display: grid;
   grid-gap: 0.6rem;
@@ -250,12 +250,12 @@
       grid-template-columns: repeat(3, 1fr);
 }
 
-.items img {
+.item img {
   width: 100%;
   border: 3px white solid;
 }
 
-.items img:hover {
+.item img:hover {
   opacity: 0.8;
   border-color: #ab1aee;
   -webkit-transition: all 0.8s ease-out;
