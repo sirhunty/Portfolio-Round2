@@ -566,11 +566,6 @@ header {
   color: #ab1aee;
 }
 
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px);
-}
-
 main .icons {
   margin-top: 1rem;
 }
@@ -583,14 +578,6 @@ main .icons a:hover {
   color: #ab1aee;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
-}
-
-main#home {
-  overflow: visible;
-}
-
-main#home h1 {
-  margin-top: 20vh;
 }
 
 @media screen and (min-width: 1171px) {

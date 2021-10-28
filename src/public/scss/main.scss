@@ -54,11 +54,13 @@ color: $secondary-color;
 }
 
 main {
-    padding: 4rem;
-    // height: 100%;
-    // Stick Footer: subtracting the size 
-    //of the footer from the veiwport height
-    min-height: calc(100vh - 60px);
+    // padding: 4rem;
+    // // height: 100%;
+    // // Stick Footer: subtracting the size 
+    // //of the footer from the veiwport height
+    // min-height: calc(100vh - 60px);
+
+    
 
     .icons {
         margin-top: 1rem;
@@ -73,13 +75,13 @@ main {
         }
     }
 
-    &#home {
-        // No scrolling
-        overflow: visible;
-        h1 {
-            margin-top: 20vh;
-        }
-    }
+    // &#home {
+    //     // No scrolling
+    //     overflow: visible;
+    //     h1 {
+    //         margin-top: 20vh;
+    //     }
+    // }
 }
 
 @import 'mobile';
