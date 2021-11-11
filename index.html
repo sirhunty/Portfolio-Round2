@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
@@ -24,94 +21,113 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <!-- FONT-AWESOME  -->
-    <script
-      src="https://kit.fontawesome.com/d2e3ee39c3.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Barlow&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
-    />
-    <link rel="stylesheet" href="/src/public/css/main.css" />
-    <title>Christopher Matthews</title>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- FONT-AWESOME  -->
+  <script src="https://kit.fontawesome.com/d2e3ee39c3.js" crossorigin="anonymous"></script>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  <link rel="stylesheet" href="/src/public/css/main.css" />
+  <title>Christopher Matthews</title>
+</head>
 
-  <body id="bg-img">
-    <header>
-      <div class="menu-btn">
-        <!--each div below repesents a "line" in the menu button-->
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-      </div>
 
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="/src/html/about.html" class="nav-link">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a href="/src/html/projects.html" class="nav-link">My Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://digital-art-portfolio.herokuapp.com/" target="_blank" class="nav-link">My Art</a>
-          </li>
-          <li class="nav-item">
-            <a href="/src/html/contact.html" class="nav-link">Contact Me</a>
-          </li>
+<body>
+  <header>
+    <div class="navBar">
+      <img class="portrait" src="/src/public/assets/images/me-250px.jpg" alt="profile_pic">
+      <nav>
+        <ul class="nav">
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="/src/html/projects.html">Projects</a></li>
+          <li><a href="/src/html/art.html">Art</a></li>
+          <!-- <li><a href="#">Contact Me</a></li> -->
         </ul>
       </nav>
-    </header>
 
-    <main id="home">
-
-      <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#projects"></a>Projects</a></li>
-        <li><a href="#art">Art</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
-
-      <h1 class="lg-heading">
-        Christopher
-        <span class="text-secondary">Matthews</span>
-      </h1>
-      <h2 class="sm-heading">Web Developer & Graphic Designer</h2>
+      <!--ICONS-->
       <div class="icons">
         <a href="https://github.com/sirhunty" target="_blank">
           <i class="fab fa-github fa-2x"></i>
         </a>
-        <a
-          href="https://www.linkedin.com/in/christopher-h-matthews/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/christopher-h-matthews/" target="_blank">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a
-          href="/src/public/assets/Resume/ChristopherMatthews_Web-Dev_Resume.pdf"
-          target="_blank"
-          class="fa fa-file fa-2x"
-        ></a>
+        <a href="/src/public/assets/Resume/ChristopherMatthews_Web-Dev_Resume.pdf" target="_blank"
+          class="fa fa-file fa-2x"></a>
       </div>
-    </main>
+    </div>
+  </header>
 
-    <script src="/src/public/js/main.js"></script>
-  </body>
+  <main>
+    <div class="mainContent">
+      <div class="title">
+        <h1>Christopher Hunter Matthews</h1>
+      </div>
+
+      <div class="about">
+        <h2>About Me</h2>
+        <p>Web Developer experienced in Agile development deliveries. I can successfully maintain front and back end
+          existing code and create web applications. Within my last role, I successfully maintained multiple product
+          account configurations and support channels for internal and external use. What motivates me as a web
+          developer is to become a part of a team where I can utilize my knowledge and skills while learning from my
+          peers. I have a Bachelor’s in Graphic Design and earned a certificate in Full Stack Development from the
+          University of Arizona. Skills attained from this course are React, MySQL, and Node to name a few. I feel the
+          combination of my technical expertise, passion to learn, and leadership experience makes me an advantageous
+          candidate for any development team.</p>
+      </div>
+
+      <div class="work">
+        <div class="subTitle">Work Exprience</div>
+        
+        <div class="job">
+          <h4>Digital Air Strike</h4>
+          <h5>Activations and Support</h5>
+          <p>Onboarded and maintained between 50 and 100 client products and supported any issues going forward which
+            allowed for a 10% increase in customer retention. Recognized for completing a full audit process of all
+            accounts within a particular program, and awarded for the responsiveness and efficiency of the report.</p>
+        </div>
+
+        <div class="job">
+          <h4>Logicalis</h4>
+          <h5>Service Desk Technician</h5>
+          <p>Created support tickets for customer issues by logging detailed information and researching solutions.
+            Communicated with customers primarily over the phone, remotely, or even chat/email. Developed patience and
+            attention to detail while managing customer accounts and building relationships.</p>
+        </div>
+
+        <div class="job">
+          <h4>Dutch Bros. Coffee</h4>
+          <h5>Assistant Manager</h5>
+          <p>Recognized for my drive and dedication to the team and was promoted to an assistant manager. Charged with
+            customer service, product management, and completing two full product deliveries each week. Learned to
+            communicate with people and have genuine moments, while understanding how to manage people and products.</p>
+        </div>
+
+        <div class="job">
+          <h4>SAP Retail Labs</h4>
+          <h5>Quality Assurance</h5>
+          <p>Onboarded and maintained between 50 and 100 client products and supported any issues going forward which
+            allowed for a 10% increase in customer retention. Recognized for completing a full audit process of all
+            accounts within a particular program, and awarded for the responsiveness and efficiency of the report.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+
+
+
+
+
+
+
+
+</body>
+
 </html>

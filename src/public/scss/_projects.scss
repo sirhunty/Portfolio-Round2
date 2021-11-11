@@ -1,13 +1,33 @@
 .item {
-    display: grid;
-    grid-gap: 0.6rem;
-    grid-template-columns: repeat(3, 1fr);
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  border: 3px #ab1aee solid;
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 12px;
+        background-color: burlywood;
+    }
+
+    .projectTitle {
+        background-color: burlywood;
+    }
 
     // setting the images to a 100% of their container; 
     // therefore adjusting them to be smaller
     img {
         width: 100%;
-        border: 3px white solid;
+        height: auto;
+        
 
         &:hover {
             opacity: 0.8;
@@ -17,124 +37,117 @@
     }
 }
 
-// Button Styles
-.btn {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-    &:hover {
-        background: $secondary-color;
-        color: set-text-color
-        ($secondary-color);
-        @include easeOut;
+
+/*General Styling*/
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Karla', Arial, sans-serif;
+
+    * {
+        box-sizing: border-box;
     }
 }
 
-// Extending the button class to the dark and light buttons
-.btn-dark {
-    @extend .btn;
-    background: darken($primary-color, 50);
-    color: white;
-}
-
-.btn-light {
-    @extend .btn;
-    background: lighten($primary-color, 50);
-    color: #333;
-}
-
-
-
-
-// Modals
-
-#modalDesc {
-  background-color: rgba(105, 105, 105, 0.9); /* Grey w/ opacity */
-  outline-style: solid;
-  outline-width: 3px;
-  outline-color: purple;
-}
-
- /* Style the Image Used to Trigger the Modal */
- .myImg {
-    // border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-
-
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    justify-content: center;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-  
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-  
-  /* The Close Button */
-  .closeModal {
-    position: absolute;
-    top: 15px;
-    left: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
+h2 {
+    font-size: 18px;
     font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .closeModal:hover,
-  .closeModal:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
+}
+
+small {
+    font-size: 14px;
+}
+
+.pull {
+    float: left;
+}
+
+.push {
+    float: right;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 100px auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    &:hover {
+        color: $secondary-color;
+        @include easeOut();
     }
-  }
+}
+
+/*Card Styling*/
+
+.card {
+    border: 1px solid #dedede;
+    background-color: white;
+
+    &__wrap {
+
+        &--inner {
+            padding: 12px;
+        }
+    }
+
+    &__item {
+        padding: 12px 18px 12px 18px;
+    }
+
+    &__sub {
+        padding: 0 18px;
+    }
+
+    &__footer {
+        padding: 18px;
+        overflow: hidden;
+        border-top: 1px solid #dedede;
+    }
+}
+
+/*Card Flex Code*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__wrap {
+
+        &--outer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        &--inner {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+          
+            @media (min-width: 480px) { 
+                width: 50%;
+            }
+          
+            @media (min-width: 1024px) { 
+                width: 33.33%;
+            }
+        }
+    }
+}
+
+.flexible {
+    flex-grow: 1;
+}
+
+
+
+

@@ -1,87 +1,104 @@
 @import 'settings';
-@import 'menu';
-@import 'about';
 @import 'projects';
-@import 'contact';
-@import 'projecttabs';
-
-// * selects everything and we are using the border box sizing on all
-* {
-box-sizing: border-box;
-}
+@import 'art';
 
 body {
-    @include background;
-    background-color: $primary-color;
-    position: absolute;
-    color: set-text-color($primary-color);
-    min-height: 100%;
-    min-width: 100%;
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.nav {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navBar {
+    margin-top: 0;
+    padding-top: 10px;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #ab1aee;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
   }
 
-// Headings
-h1, h2, h3 {
-    margin: 0;
-    font-weight: 400;
-
-    &.lg-heading {
-        font-size: 6rem;
-    }
-
-    &.sm-heading {
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2px), 0.5);
-    }
 }
 
-a {
-    color: set-text-color($primary-color);
-    text-decoration: none;
+
+
+.mainContent {
+    margin-left:15%;
+    padding:1px 16px;
+    height:1000px;
+    // background-image: $home-image;
+    // background-attachment: fixed;
+    // background-size: cover;
+    // opacity: $background-opacity;
 }
 
-header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
+.portrait {
+    width: 250px;
+    height: 250px;
+    background: url("/src/public/assets/images/me-250px.jpg");
+    border-radius: 50%;
+    border: solid 3px #ab1aee;
 }
 
-.text-secondary {
-color: $secondary-color;
-}
 
-main {
-    // padding: 4rem;
-    // // height: 100%;
-    // // Stick Footer: subtracting the size 
-    // //of the footer from the veiwport height
-    // min-height: calc(100vh - 60px);
+.icons {
+    margin-top: 1rem;
 
-    
+    a {
+		    display: block;
+        padding: 0.4rem;
 
-    .icons {
-        margin-top: 1rem;
-
-        a {
-            padding: 0.4rem;
-
-            &:hover {
-                color: $secondary-color;
-                @include easeOut();
-            }
+        &:hover {
+            color: $secondary-color;
+            @include easeOut();
         }
     }
-
-    // &#home {
-    //     // No scrolling
-    //     overflow: visible;
-    //     h1 {
-    //         margin-top: 20vh;
-    //     }
-    // }
 }
 
-@import 'mobile';
+.iconsP {
+  margin-top: 1rem;
+  text-align: center;
+
+  a {
+      padding: 0.4rem;
+
+      &:hover {
+          color: $secondary-color;
+          @include easeOut();
+      }
+  }
+}
+
+    
