@@ -294,27 +294,6 @@ img {
   padding: 10px;
 }
 
-@media screen and (max-width: 700px) {
-  .nav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .nav a {
-    float: left;
-  }
-  .mainContent {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .nav a {
-    text-align: center;
-    float: none;
-  }
-}
-
 body {
   margin: auto;
 }
@@ -331,9 +310,7 @@ body {
 .navBar {
   margin-top: 0;
   padding-top: 10px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 15%;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -346,12 +323,7 @@ body {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.navBar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navBar li a {
+.navBar a {
   display: block;
   color: #000;
   padding: 8px 16px;
@@ -410,5 +382,26 @@ body {
   color: #ab1aee;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
+}
+
+@media screen and (max-width: 700px) {
+  .navBar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  a {
+    float: left;
+  }
+  .mainContent {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navBar a {
+    text-align: center;
+    float: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
