@@ -39,11 +39,14 @@ body {
   a.active {
     background-color: #ab1aee;
     color: white;
+    // 
+    
   }
   
   a:hover:not(.active) {
     background-color: #555;
-    color: white;
+    color: $secondary-color;
+    @include easeOut();
   }
 
 }
@@ -84,11 +87,8 @@ body {
 }
 
 .iconsP {
-  margin-top: 1rem;
-  text-align: center;
 
   a {
-      padding: 0.4rem;
 
       &:hover {
           color: $secondary-color;

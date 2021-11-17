@@ -337,7 +337,9 @@ body {
 
 .navBar a:hover:not(.active) {
   background-color: #555;
-  color: white;
+  color: #ab1aee;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
 }
 
 .mainContent {
@@ -367,15 +369,6 @@ body {
   color: #ab1aee;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
-}
-
-.iconsP {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.iconsP a {
-  padding: 0.4rem;
 }
 
 .iconsP a:hover {
