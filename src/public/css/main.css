@@ -348,33 +348,18 @@ body {
   height: 1000px;
 }
 
-.portrait {
-  width: 250px;
-  height: 250px;
-  background: url("/src/public/assets/images/me-250px.jpg");
-  border-radius: 50%;
+.navImage {
   border: solid 3px #ab1aee;
 }
 
-.icons {
-  margin-top: 1rem;
+.about {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.icons a {
-  display: block;
-  padding: 0.4rem;
-}
-
-.icons a:hover {
-  color: #ab1aee;
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
-}
-
-.iconsP a:hover {
-  color: #ab1aee;
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+.job {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 700px) {
@@ -382,6 +367,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
+    text-align: center;
   }
   a {
     float: left;

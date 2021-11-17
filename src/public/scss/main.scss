@@ -39,7 +39,6 @@ body {
   a.active {
     background-color: #ab1aee;
     color: white;
-    // 
     
   }
   
@@ -63,39 +62,47 @@ body {
     // opacity: $background-opacity;
 }
 
-.portrait {
-    width: 250px;
-    height: 250px;
-    background: url("/src/public/assets/images/me-250px.jpg");
-    border-radius: 50%;
+.navImage {
+    // width: 250px;
+    // height: 250px;
+    // background: url("/src/public/assets/images/me-250px.jpg");
+    // border-radius: 50%;
     border: solid 3px #ab1aee;
 }
 
-
-.icons {
-    margin-top: 1rem;
-
-    a {
-		    display: block;
-        padding: 0.4rem;
-
-        &:hover {
-            color: $secondary-color;
-            @include easeOut();
-        }
-    }
+.about {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.iconsP {
-
-  a {
-
-      &:hover {
-          color: $secondary-color;
-          @include easeOut();
-      }
-  }
+.job {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+// .icons {
+//     margin-top: 1rem;
+
+//     a {
+// 		    display: block;
+//         padding: 0.4rem;
+
+//         &:hover {
+//             color: $secondary-color;
+//             @include easeOut();
+//         }
+//     }
+// }
+
+// .iconsP {
+
+//   a {
+
+//       &:hover {
+//           color: $secondary-color;
+//           @include easeOut();
+//       }
+//   }
+// }
 
 @import 'mobile';
 

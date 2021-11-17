@@ -3,9 +3,14 @@
     width: 100%;
     height: auto;
     position: relative;
+    text-align: center;
   }
-  a {float: left;}
-  .mainContent {margin-left: 0;}
+  a {
+    float: left;
+  }
+  .mainContent {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
