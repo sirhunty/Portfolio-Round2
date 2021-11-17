@@ -36,12 +36,12 @@ body {
     text-decoration: none;
   }
   
-  li a.active {
+  a.active {
     background-color: #ab1aee;
     color: white;
   }
   
-  li a:hover:not(.active) {
+  a:hover:not(.active) {
     background-color: #555;
     color: white;
   }

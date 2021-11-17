@@ -330,12 +330,12 @@ body {
   text-decoration: none;
 }
 
-.navBar li a.active {
+.navBar a.active {
   background-color: #ab1aee;
   color: white;
 }
 
-.navBar li a:hover:not(.active) {
+.navBar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
