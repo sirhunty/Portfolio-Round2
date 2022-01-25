@@ -1,3 +1,39 @@
+.navBar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  /* Links inside the navbar */
+  a {
+    display: inline-block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  a.active {
+    background-color: #ab1aee;
+    color: white;
+    
+  }
+  
+  a:hover:not(.active) {
+    background-color: #555;
+    color: $secondary-color;
+    @include easeOut();
+  }
+
+}
+
+
+
+
 /*General Styling*/
 
 body {
