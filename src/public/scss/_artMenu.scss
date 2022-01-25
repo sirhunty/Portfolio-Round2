@@ -1,0 +1,123 @@
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    // Using the easeOut hover from main scss
+    @include easeOut;
+
+    // styling for each menu button line (3 lines)
+    .btn-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: set-text-color($primary-color);
+        @include easeOut;
+    }
+
+    // rotate menu button into an X with menu lines
+    &.close {
+        transform: rotate(180deg);
+
+        // spuedo selector for each line
+        .btn-line {
+            // line 1 roatate
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            // Line 2 hide
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            //Line 3 rotate
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
+    }
+}
+
+// The menus overlay
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // opacity: 0.9;
+    visibility: hidden;
+
+    // & denotes that the styling is applying the menu class
+    // and the secondary classes like "menu-nav or manu-branding"
+    &.show {
+        visibility: visible;
+    }
+
+    // adjusting the both sides of the menu (portrait and list)
+    &-branding,
+    &-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    // only adjusting the right side of the menu (the links)
+    &-nav {
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color, 5);
+        list-style: none;
+        transform: translate3d(0, 100%, 0);
+        @include easeOut;
+
+        &.show {
+            // slide in from the bottom of page
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    
+
+    .nav-item {
+        transform: translate3d(-600px, 0, 0);
+        @include easeOut;
+
+        &.show {
+            // Sliding in from the right
+            transform: translate3d(0, 0, 0);
+        }
+
+        // accesses the links withing the nav class
+        &.current > a {
+            color: $secondary-color;
+        }
+    }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem;
+        font-weight: 300;
+        color: set-text-color($primary-color);
+        text-decoration: none;
+        @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+// Delaying each nav items' slide by 0.1s using a Sass for loop; like "for(let x=0; i <4; i++)
+@for $x from 1 through 5 {
+    // #{$x} is similar to a template literal
+    .nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
+    }
+}
