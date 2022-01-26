@@ -37,7 +37,7 @@ $background-opacity: 0.8;
 // Changes text color based upon the primary color; if dark, the text will change to a lighter color (white)
 
 @function set-text-color($color) {
-    @if (lightness($color) > 40) {
+    @if (lightness($color) > 50) {
         @return black;
     } @else {
         @return white;

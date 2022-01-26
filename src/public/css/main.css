@@ -472,16 +472,6 @@ img {
 /*Art Nav Bar*/
 /* The navigation bar */
 /*General Styling*/
-body {
-  background-color: #f2f2f2;
-  font-family: 'Karla', Arial, sans-serif;
-}
-
-body * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 h2 {
   font-size: 18px;
   font-weight: bold;
@@ -647,16 +637,6 @@ img {
 }
 
 /*General Styling*/
-body {
-  background-color: #f2f2f2;
-  font-family: 'Karla', Arial, sans-serif;
-}
-
-body * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 h2 {
   font-size: 18px;
   font-weight: bold;
@@ -796,7 +776,7 @@ img {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: white;
+  background: black;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
 }
@@ -824,7 +804,6 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 }
 
