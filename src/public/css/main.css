@@ -225,7 +225,6 @@ small {
 
 .container {
   width: 100%;
-  max-width: 960px;
   margin: 100px auto;
 }
 
@@ -829,12 +828,14 @@ img {
   width: 50%;
   height: 100vh;
   overflow: hidden;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: #3f3f3f;
   list-style: none;
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
@@ -953,8 +954,14 @@ body {
   transition: all 0.8s ease-out;
 }
 
-.mainContent {
+.mainPageContent {
   margin-left: 15%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.mainContent {
+  margin-left: 0%;
   padding: 1px 16px;
   height: 1000px;
 }

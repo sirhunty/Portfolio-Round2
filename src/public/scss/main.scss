@@ -56,14 +56,24 @@ body {
 
 
 
-.mainContent {
-    margin-left:15%;
+.mainPageContent {
+    margin-left: 15%;
     padding:1px 16px;
     height:1000px;
     // background-image: $home-image;
     // background-attachment: fixed;
     // background-size: cover;
     // opacity: $background-opacity;
+}
+
+.mainContent {
+  margin-left: 0%;
+  padding:1px 16px;
+  height:1000px;
+  // background-image: $home-image;
+  // background-attachment: fixed;
+  // background-size: cover;
+  // opacity: $background-opacity;
 }
 
 .navImage {
