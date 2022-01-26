@@ -786,7 +786,7 @@ img {
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 35px;
+  top: 15px;
   cursor: pointer;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
@@ -824,6 +824,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: 0.9;
   visibility: hidden;
 }
 
@@ -831,7 +832,7 @@ img {
   visibility: visible;
 }
 
-.menu-branding, .menu-nav {
+.menu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

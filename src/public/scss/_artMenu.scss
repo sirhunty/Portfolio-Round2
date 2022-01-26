@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 3;
     right: 35px;
-    top: 35px;
+    top: 15px;
     cursor: pointer;
     // Using the easeOut hover from main scss
     @include easeOut;
@@ -43,7 +43,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    // opacity: 0.9;
+    opacity: 0.9;
     visibility: hidden;
 
     // & denotes that the styling is applying the menu class
@@ -53,7 +53,7 @@
     }
 
     // adjusting the both sides of the menu (portrait and list)
-    &-branding,
+    // &-branding,
     &-nav {
         display: flex;
         flex-flow: column wrap;
