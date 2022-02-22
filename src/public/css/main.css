@@ -161,8 +161,6 @@ a:hover {
 .navBar {
   overflow: hidden;
   background-color: #f1f1f1;
-  position: fixed;
-  /* Set the navbar to fixed position */
   top: 0;
   /* Position the navbar at the top of the page */
   width: 100%;
@@ -1001,7 +999,6 @@ body {
     height: auto;
     position: relative;
     text-align: center;
-    top: 75px;
   }
   a {
     float: left;
