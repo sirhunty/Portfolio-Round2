@@ -29,10 +29,24 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .mainPageContent {
+    margin-left: 0;
+    padding:1px 16px;
+    height:1000px;
+    // background-image: $home-image;
+    // background-attachment: fixed;
+    // background-size: cover;
+    // opacity: $background-opacity;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .navBar a {
     text-align: center;
     float: none;
   }
 }
+
+
 
