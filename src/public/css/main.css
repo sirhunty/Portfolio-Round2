@@ -760,10 +760,7 @@ img {
 }
 
 .menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 35px;
-  top: 15px;
+  position: relative;
   cursor: pointer;
   -webkit-transition: all 0.8s ease-out;
   transition: all 0.8s ease-out;
@@ -1019,6 +1016,7 @@ body {
 @media screen and (max-width: 400px) {
   .navBar a {
     text-align: center;
+    position: relative;
     float: none;
   }
 }
